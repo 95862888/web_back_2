@@ -1,0 +1,26 @@
+GET / HTTP/1.0
+
+GET /web_back_2/index.html HTTP/1.1
+Host: u47513.kubsu-dev.ru
+
+HEAD /web_back_2/file.tar.gz HTTP/1.1
+Host: u47513.kubsu-dev.ru
+
+HEAD /web_back_2/image.png HTTP/1.1
+Host: u47513.kubsu-dev.ru
+
+POST /web_back_2/index.php HTTP/1.1
+Host: u47513.kubsu-dev.ru
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 15
+comment = Hello
+
+
+GET /web_back_2/file.tar.gz HTTP/1.1
+Host: u47513.kubsu-dev.ru
+Range: bytes=0-99
+
+GET /web_back_2/index.php HTTP/1.1
+Host: u47513.kubsu-dev.ru
+Accept-Charset: utf-8
+
